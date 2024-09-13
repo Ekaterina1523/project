@@ -1,0 +1,109 @@
+.kanbanBoard {
+    background-color: #0079bf;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .header {
+    background-color: #0067a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 18px;
+    color: #fff;
+    font: 400 28px Roboto, sans-serif;
+  }
+  
+  .boardTitle {
+    margin: 0;
+  }
+  
+  .avatar {
+    width: 64px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .boardContent {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .columnContainer {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .taskColumn {
+    background-color: #ebecf0;
+    border-radius: 10px;
+    padding: 12px;
+    width: 25%;
+    color: #000;
+    font: 400 18px Roboto, sans-serif;
+  }
+  
+  .columnTitle {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .task {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 8px;
+    margin-bottom: 15px;
+  }
+  
+  .addCard {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #5e6c84;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+  }
+  
+  .addIcon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .footer {
+    background-color: #0067a3;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 21px;
+    font: 400 18px Roboto, sans-serif;
+  }
+  
+  .taskStats {
+    display: flex;
+    gap: 36px;
+  }
+  
+  @media (max-width: 991px) {
+    .columnContainer {
+      flex-direction: column;
+    }
+  
+    .taskColumn {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  
+    .header,
+    .footer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
